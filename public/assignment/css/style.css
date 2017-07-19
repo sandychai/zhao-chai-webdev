@@ -1,0 +1,53 @@
+input.form-control {
+    margin-bottom: 5px;
+}
+
+body {
+    padding-top: 36px;
+}
+
+.white {
+    color: white;
+}
+
+.pos {
+    bottom: 100px;
+}
+
+.blue {
+    color: blue;
+}
+
+.entypo-search:before {
+    margin-right:5px;
+}
+
+.entypo-search-2:before {
+    position: relative;
+    left: 1250px;
+}
+
+.entypo-search-3:before {
+    position: relative;
+    left: 650px;
+}
+
+.entypo-search-4:before {
+    position: relative;
+    left: 190px;
+}
+
+.entypo-search-5:before {
+    position: relative;
+    left: 1180px;
+}
+
+.element {
+    position: relative;
+    left: 360px;
+}
+
+
+
+
+
