@@ -29,7 +29,11 @@ body {
 
 .entypo-search-3:before {
     position: relative;
+<<<<<<< HEAD
     left: 850px;
+=======
+    left: 650px;
+>>>>>>> origin/2017-summer-2
 }
 
 .entypo-search-4:before {
