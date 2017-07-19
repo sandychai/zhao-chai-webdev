@@ -19,21 +19,22 @@ body {
 }
 
 .entypo-search:before {
-    margin-right: 5px;
+    margin-right:5px;
 }
 
 .entypo-search-2:before {
-    margin-right: 850px;
+    position: relative;
+    left: 1250px;
 }
 
 .entypo-search-3:before {
     position: relative;
-    left: 950px;
+    left: 850px;
 }
 
 .entypo-search-4:before {
     position: relative;
-    left: 200px;
+    left: 190px;
 }
 
 .entypo-search-5:before {
@@ -41,7 +42,7 @@ body {
     left: 1180px;
 }
 
-.entypo-search-6 {
+.element {
     position: relative;
     left: 360px;
 }
