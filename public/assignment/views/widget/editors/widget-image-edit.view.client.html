@@ -1,0 +1,72 @@
+
+<nav class="navbar navbar-default label-primary">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+          <span class="white">
+                Widget Edit
+          </span>
+                <a ng-click="model.updateWidget(model.widget)">
+                    <span class="glyphicon glyphicon-ok white entypo-search-3"></span>
+                </a>
+                <a href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget">
+                    <span class="glyphicon glyphicon-chevron-left pull-left white"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div class="containerfluid">
+
+            <label for="name">Name</label>
+            <input id="name"
+                   ng-model="model.widget.name"
+                   class="form-control"/>
+
+            <label for="text">Text</label>
+            <input id="text"
+                   ng-model="model.widget.text"
+                   rows="5"
+                   class="form-control"/>
+
+            <label for="url">URL</label>
+            <input id="url"
+                   ng-model="model.widget.url"
+                   class="form-control"/>
+
+            <label for="width">Width</label>
+            <input id="width"
+                   ng-model="model.widget.width"
+                   class="form-control"/>
+
+            <label for="file">Upload</label>
+            <input id="file"
+                   type="file"
+                   class="form-control"/>
+
+            <a href="../../website/templates/website-list.view.client.html"
+               class="btn btn-block btn-primary">
+                Upload Image
+            </a>
+
+            <a ng-click="model.deleteWidget(model.widgetId)"
+               class="btn btn-block btn-danger">
+                Delete
+            </a>
+        </div>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom label-primary">
+    <div class="col-md-1">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="#!/user/{{model.userId}}">
+                        <span class="glyphicon glyphicon-user pull-right white entypo-search-3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,77 @@
+
+<nav class="navbar navbar-default  label-primary">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+                <span class="white">
+                Websites
+                </span>
+                <span class="element white">
+                New Webiste
+                </span>
+                <a href="#!/user/{{model.userId}}/website">
+                    <span class="glyphicon glyphicon-chevron-left white pull-left" ></span>
+                </a>
+
+                <a href="#!/user/{{model.userId}}/website/new">
+                    <span class="glyphicon glyphicon-plus white entypo-search-4" ></span>
+                </a>
+                <a ng-click="model.createWebsite(website)">
+                    <span class="glyphicon glyphicon-ok white entypo-search-3" ></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 hidden-xs srollable-left">
+            <ul class="list-group">
+                <li ng-repeat="website in model.websites" class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-8 col-sm-11 col-xs-11">
+                            <a href="../../page/templates/page-list.view.client.html">
+                                {{website.name}}
+                            </a>
+                        </div>
+                        <a href="">
+                            <span class="glyphicon glyphicon-cog pull-right"></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <label for="name">Name</label>
+            <input id="name"
+                   class="form-control"
+                   ng-model="website.name"
+                   value="Name"/>
+
+            <label for="description">Description</label>
+            <textarea id="description"
+                      rows="5"
+                      class="form-control"
+                      ng-model="website.description"
+                      value="descrption">
+            </textarea>
+
+        </div>
+
+    </div>
+    </div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom label-primary">
+    <div class="col-md-1">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="#!/user/{{model.userId}}">
+                        <span class="glyphicon glyphicon-user pull-right white entypo-search-2"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
