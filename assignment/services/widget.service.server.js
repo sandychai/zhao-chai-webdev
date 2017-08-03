@@ -110,11 +110,11 @@ function updateWidget(req, res) {
             widgets[w].size = widget.size;
             widgets[w].width = widget.width;
             widgets[w].url = widget.url;
-            res.sendStatus(200);console.log("fuck you")
+            res.sendStatus(200);//console.log("fuck you")
             return;
 
         }
-    }console.log(widgets);
+    }//console.log(widgets);
     res.sendStatus(404);
 }
 
@@ -125,7 +125,7 @@ function deleteWidget(req, res) {
     });
     var index = widgets.indexOf(widget);
     widgets.splice(index,1);
-    console.log("fuck you")
+    //console.log("fuck you")
     res.sendStatus(200);
 }
 

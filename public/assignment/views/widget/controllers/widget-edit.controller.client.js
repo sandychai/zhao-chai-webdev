@@ -53,7 +53,7 @@
             //widgetService.updateWidget(model.widget._id, widget);
             //$location.url('/user/' + model.userId + '/website/'+ model.websiteId + '/page/' + model.pageId + '/widget');
             widgetService
-                .updateWidget(model.widget._id)
+                .updateWidget(model.widget._id,widget)
                 .then(function () {
                     $location.url('/user/' + model.userId + '/website/'+ model.websiteId + '/page/' + model.pageId + '/widget');
                 });

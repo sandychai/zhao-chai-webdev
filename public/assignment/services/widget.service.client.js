@@ -23,6 +23,7 @@
             var url = '/api/assignment/user/userId/website/websiteId/page/pageId/widget';
             return $http.post(url,widget)
                 .then(function (response) {
+                    //console.log(response);
                     return response.data;
                 })
         }
@@ -41,6 +42,8 @@
         }
 
         function updateWidget(widgetId, widget) {
+            // console.log(widget);
+            // console.log(widgetId);
             //var oldWidget = widgets.find(function (widget) {
               //  return widget._id ===widgetId;
             //});
