@@ -15,12 +15,16 @@ module.exports = websiteModel;
 
 
 function createWebsiteForUser(userId, website) {
+    console.log("hello")
     website._user = userId;
     var websiteTmp = null;
+    console.log("he")
     return websiteModel
         .create(website)
         .then(function (websiteDoc) {
+            console.log("hell")
             websiteTmp = websiteDoc;
+            console.log("hell")
             return userModel.addWebsite(userId, websiteDoc._id);
         })
         .then(function (userDoc) {

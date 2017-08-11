@@ -22,6 +22,7 @@
         
         function createWebsite(website) {
             website.developerId = model.userId;
+            console.log("hi")
             websiteService
                 .createWebsite(website)
                 .then(function (website) {

@@ -7,7 +7,9 @@ userModel.createUser = createUser;
 userModel.findUserById = findUserById;
 userModel.findUserByCrendential = findUserByCrendential;
 userModel.deleteUser = deleteUser;
-userModel.updateUser = updateUser
+userModel.updateUser = updateUser;
+userModel.addWebsite = addWebsite;
+userModel.removeWebsite = removeWebsite;
 
 
 module.exports = userModel;
@@ -34,8 +36,9 @@ function findUserByCrendential(username, password) {
     return userModel.findOne({username: username, password: password});
 }
 
-
+console.log("server");
 function addWebsite(developerId, websiteId) {
+    console.log("add")
     return userModel
         .findById(developerId)
         .then(function (user) {
@@ -43,7 +46,7 @@ function addWebsite(developerId, websiteId) {
             return user.save();
         });
 }
-
+console.log("servers");
 function removeWebsite(developerId, websiteId) {
     return userModel
         .findById(developerId)
