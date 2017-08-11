@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('DirectiveLecture', [])
+        .module('WAM', [])
         .directive('hello', helloTag)
         .directive('wdDraggable', wdDraggable);
 

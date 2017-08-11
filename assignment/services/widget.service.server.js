@@ -8,7 +8,7 @@ app.post ("/api/assignment/upload", upload.single('myFile'), uploadImage);
 app.get('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget', findWidgetsByPageId);
 app.post('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget', createWidget);
 app.get('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget/:widgetId', findWidgetById);
-app.get('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget/:widgetId', getWidgetType);
+//app.get('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget/:widgetId', getWidgetType);
 app.put('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget/:widgetId', updateWidget);
 app.delete('/api/assignment/user/:userId/website/:websiteId/page/:pageId/widget/:widgetId', deleteWidget);
 
@@ -81,8 +81,6 @@ function createWidget(req, res) {
     //console.log('user');
     widgets.push(widget);
     res.send(widget);
-    console.log(widgets);
-
 }
 
 function getWidgetType(req, res) {
@@ -102,7 +100,6 @@ function updateWidget(req, res) {
     var websiteId = req.params.websiteId;
     var pageId = req.params.pageId;
     var widgetId =  req.params.widgetId;
-
     for (var w in widgets){
         if(widgetId === widgets[w]._id){
             widgets[w].name = widget.name;
@@ -110,11 +107,10 @@ function updateWidget(req, res) {
             widgets[w].size = widget.size;
             widgets[w].width = widget.width;
             widgets[w].url = widget.url;
-            res.sendStatus(200);//console.log("fuck you")
+            res.sendStatus(200);
             return;
-
         }
-    }//console.log(widgets);
+    }
     res.sendStatus(404);
 }
 
@@ -125,7 +121,6 @@ function deleteWidget(req, res) {
     });
     var index = widgets.indexOf(widget);
     widgets.splice(index,1);
-    //console.log("fuck you")
     res.sendStatus(200);
 }
 

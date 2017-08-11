@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Project">
+<html lang="en" ng-app="OmdbApp">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
-            integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
-            crossorigin="anonymous"></script>
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+
+
 
     <script src="app.js"></script>
-    <script src="config.js"></script>
-
-    <script src="controllers/home.controller.client.js"></script>
-    <script src="controllers/movie.controller.client.js"></script>
-    <!--<script src="views/user/controllers/login.controller.client.js"></script>-->
-    <!--<script src="views/user/controllers/profile.controller.client.js"></script>-->
-    <!--<script src="views/user/controllers/register.controller.client.js"></script>-->
-
-
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,14 +17,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>Project Home Page</title>
-
+    <title>Title</title>
 </head>
 <body>
 
-<div class="container">
-    <div ng-view></div>
-</div>
+<div class="container-fluid" ng-controller="searchController as model">
+    <h1>OMDB API</h1>
+    <h2>Search by Movie title</h2>
+    <input placeholder="batman"
+            class="form-control"/>
+    <button ng-click="model.searchMovieByTitle()" class="btn btn-primary btn-block">
+             Search
+    </button>
 
+    {{model.movies}}
+    </div>
 </body>
+
 </html>

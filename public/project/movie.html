@@ -1,0 +1,8 @@
+<h1>Search Results</h1>
+<ul class="list-group">
+    <li ng-click="model.searchDetails(movie.imdbID)" ng-repeat="movie in model.movies" class="list-group-item">
+        <img src="{{movie.Poster}}" width="100px">
+        {{movie.Title}}
+        {{movie.imdbID}}
+    </li>
+</ul>
