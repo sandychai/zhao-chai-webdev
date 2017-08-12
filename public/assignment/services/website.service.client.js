@@ -20,6 +20,8 @@
             //website._id = (new Date()).getTime() + "";
             //websites.push(website);
             var url = '/api/assignment/user/userId/website';
+            console.log("client")
+            console.log(website);
             return $http.post(url,website)
                 .then(function (response) {
                     return response.data;

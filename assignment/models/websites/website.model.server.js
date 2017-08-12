@@ -16,9 +16,10 @@ module.exports = websiteModel;
 
 function createWebsiteForUser(userId, website) {
     console.log("hello")
-    website._user = userId;
+    // website._user = userId;
     var websiteTmp = null;
     console.log("he")
+    //console.log(website);
     return websiteModel
         .create(website)
         .then(function (websiteDoc) {

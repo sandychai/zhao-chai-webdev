@@ -38,14 +38,17 @@ function findUserByCrendential(username, password) {
 
 console.log("server");
 function addWebsite(developerId, websiteId) {
-    console.log("add")
+    console.log(developerId)
     return userModel
         .findById(developerId)
         .then(function (user) {
             user.websites.push(websiteId);
+            console.log('ok');
+            console.log(websites);
             return user.save();
         });
 }
+
 console.log("servers");
 function removeWebsite(developerId, websiteId) {
     return userModel

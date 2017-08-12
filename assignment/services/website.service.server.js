@@ -49,6 +49,8 @@ function findAllWebsitesForUser(req, res) {
 function createWebsite(req, res) {
     var website = req.body;
     var userId = req.params.userId;
+    //console.log("server");
+    //console.log(website);
 
     return websiteModel
         .createWebsiteForUser(userId, website)
