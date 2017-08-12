@@ -36,26 +36,3 @@ function findUserByCrendential(username, password) {
     return userModel.findOne({username: username, password: password});
 }
 
-console.log("server");
-function addWebsite(developerId, websiteId) {
-    console.log(developerId)
-    return userModel
-        .findById(developerId)
-        .then(function (user) {
-            user.websites.push(websiteId);
-            console.log('ok');
-            console.log(websites);
-            return user.save();
-        });
-}
-
-console.log("servers");
-function removeWebsite(developerId, websiteId) {
-    return userModel
-        .findById(developerId)
-        .then(function (user) {
-            var index = user.websites.indexOf(websiteId);
-            user.websites.splice(index, 1);
-            return user.save();
-        })
-}
