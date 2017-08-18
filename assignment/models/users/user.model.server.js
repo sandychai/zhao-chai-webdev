@@ -7,7 +7,9 @@ userModel.createUser = createUser;
 userModel.findUserById = findUserById;
 userModel.findUserByCrendential = findUserByCrendential;
 userModel.deleteUser = deleteUser;
-userModel.updateUser = updateUser
+userModel.updateUser = updateUser;
+//userModel.addWebsite = addWebsite;
+//userModel.removeWebsite = removeWebsite;
 
 
 module.exports = userModel;
@@ -33,3 +35,4 @@ function findUserById(userId) {
 function findUserByCrendential(username, password) {
     return userModel.findOne({username: username, password: password});
 }
+
