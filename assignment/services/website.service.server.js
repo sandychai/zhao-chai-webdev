@@ -16,7 +16,7 @@ var websites = [
     { "_id": "789", "name": "Chess",       "developerId": "234", "description": "Lorem" }
 ];
 
-var websiteModel = require("../models/websites/website.model.server");
+//var websiteModel = require("../models/websites/website.model.server");
 
 function findWebsiteById(req, res) {
 

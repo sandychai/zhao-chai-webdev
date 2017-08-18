@@ -8,8 +8,6 @@ userModel.findUserById = findUserById;
 userModel.findUserByCrendential = findUserByCrendential;
 userModel.deleteUser = deleteUser;
 userModel.updateUser = updateUser;
-userModel.addWebsite = addWebsite;
-userModel.removeWebsite = removeWebsite;
 
 
 module.exports = userModel;
