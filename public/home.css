@@ -1,0 +1,114 @@
+
+body {
+    font: 500 14px/18px Roboto
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+
+
+.muck-up {
+    width: 900px;
+    height: 645px;
+    margin: 5em auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    background: url(https://raw.githubusercontent.com/arjunamgain/FilterMenu/master/images/header.jpg) no-repeat top /contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(71, 32, 84, 0.5);
+}
+
+.muck-up > .top {
+    position: relative;
+    min-height: 240px;
+    padding: 15px;
+    color: #fff;
+}
+
+
+.user-profile {
+    margin-top: 90px;
+}
+
+
+.muck-up .bottom {
+    background-color: #fff;
+    min-height: 303px;
+    z-index: 1;
+    padding: 35px;
+    position: relative;
+    color: #222;
+    padding-top: 0px;
+}
+
+.bottom:after {
+    content: '';
+    position: absolute;
+    top: -46px;
+    background: #fff;
+    left: -22px;
+    right: 0;
+    height: 100px;
+    transform: rotate(10deg);
+    width: 337px;
+    z-index: -1;
+}
+
+
+
+
+ul.tasks li {
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 8;
+}
+
+ul.tasks li:after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 8px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+ul.tasks li.red:after {
+    background: #FF3163;
+}
+
+ul.tasks li.green:after {
+    background: #54D6C7;
+}
+
+ul.tasks li.yellow:after {
+    background: #EAB429;
+}
+
+

@@ -1,37 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Web Dev Course Home Page</title>
-</head>
-<body>
-    <h1>Web Dev Course Home Page</h1>
 
-    <p>
-        This is your website's home page. Your home page should have a picture of yourself, link to your assignments,
-        link to your final project implementation on Heroku, link to your GitHub,
-        link to a 5 minute video demoing your project. Your home page should look
-        spectacular. You should feel proud to share your homepage with your potential employer.
-        I should feel proud to share your homepage with my colleagues.
-    </p>
 
-    <h2>Required links</h2>
-    <ul>
-        <li>
-            <a href="https://music-on-the-fly.herokuapp.com">Project</a>
-        </li>
-        <li>
-            <a href="assignment/">Assignment</a>
-        </li>
-        <li>
-            <a href="test/index.html">Test MongoDB</a>
-        </li>
-        <li>
-            <a href="https://github.com/sandychai/zhao-chai-webdev">Your public repository at GitHub.com</a>
-        </li>
-        <li>
-            <a href="/lectures">Lectures</a>
-        </li>
-    </ul>
-</body>
-</html>
+<link href="home.css" rel="stylesheet"/>
+
+<div class="muck-up">
+    <div class="overlay"></div>
+    <div class="top">
+        <div class="nav">
+            <span class="ion-android-menu"></span>
+
+            <span class="ion-ios-more-outline"></span>
+        </div>
+        <div class="user-profile">
+            <div class="user-details">
+                <h1>Zhao Chai</h1>
+                <h1>Web Development</h1>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="filter-btn">
+        <a id="one" href="#"><i class="ion-ios-checkmark-outline"></i></a>
+        <a id="two" href="#"><i class="ion-ios-alarm-outline"></i></a>
+        <a id="three" href="#"><i class="ion-ios-heart-outline"></i></a>
+        <a id="all" href="#"><i class="ion-ios-star-outline"></i></a>
+        <span class="toggle-btn ion-android-funnel"></span>
+    </div>
+    <div class="clearfix"></div>
+    <div class="bottom">
+        <div class="title">
+            <h3>Content</h3>
+        </div>
+        <ul class="tasks">
+            <li class="one red">
+                <a href="https://music-on-the-fly.herokuapp.com">Project</a>
+            </li>
+
+            <li class="one red">
+                <a href="assignment">Assignment</a>
+            </li>
+
+            <li class="two green">
+                <a href="https://github.com/sandychai/zhao-chai-webdev">Your public repository at GitHub.com</a
+            </li>
+
+            <li class="tow green hang">
+                <a href="test/index.html">Test MongoDB</a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
